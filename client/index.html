@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="portfolioApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Travel Stories</title>
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<!-- more scroll page not working -->
+
+	<style type="text/css"></style>
+
+</head>
+
+<body>
+	<div class="fixed-content-wrapper">
+		<!-- <ui-view></ui-view> -->
+		<main ui-view role="main">
+	<!-- 	<main> -->
+<!-- <ui-view></ui-view> -->
+		<div id="home" >
+
+			<div id="page"> <!-- for greyscale -->
+			<div class="container-fluid home" ng-controller="homeCtrl as vm">
+
+
+				<section id="header-container">
+					<nav id="drawer" ng-controller="navCtrl as vm">
+
+						<button class="menu"><i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+
+						</button>
+
+					</nav>
+				</section>
+
+
+				<ul class="cb-slideshow">
+			            <li><span></span><div id="welcome"><h3>Welcome to my journey</h3>
+			            	<h3> ~Salman Kabir</h3></div></li>
+			            <li><span></span></li>
+			            <li><span></span></li>
+			            <li><span></span></li>
+			            <li><span></span></li>
+			            <li><span></span></li>
+
+
+				        <div class="quote">
+
+	               			<p>What is this life if, full of care, <br>
+							We have no time to stand and stare. <br><br>
+
+<!-- No time to stand beneath the boughs
+And stare as long as sheep or cows. <br> -->
+
+No time to see, when woods we pass,<br>
+Where squirrels hide their nuts in grass. <br><br>
+
+No time to see, in broad daylight, <br>
+Streams full of stars, like skies at night. <br><br>
+
+<!-- No time to turn at Beauty's glance,
+And watch her feet, how they can dance. <br> -->
+
+No time to wait till her mouth can<br>
+Enrich that smile her eyes began. <br><br>
+
+A poor life this is if, full of care,<br>
+We have no time to stand and stare. <br><br>
+ ~William Henry Davies
+			               			</p>
+  
+			               		</div>	
+
+			        </ul>
+	
+		
+				</div> <!-- home class -->
+			</div> <!-- id page -->
+		</div> <!-- id=home -->
+
+<!-- About me page starts -->		
+		<div id="about">
+		<div class="container-fluid about">
+				<div class="row">
+					<div class="col-xs-12" id="about-box">
+						<!-- <h2 class="about-intro">Stories I Live</h2> -->
+						<h2 class="about-intro">My Story</h2>
+
+						<p class="about-para">For me, world history is an adventure and also a version of time travel that opens a window to the past.  Hence I explore the world to see the memories and stories it holds.  My travel & photography has become a part of my journey of life and I’m pleased to share that vision with you.  I love what I do, as well as the people and places I photograph.  Each person and every place has its own story.   So I guess it's true when they say, "Travelling.  It leaves you speechless, then turns you into a storyteller !"</p><br>
+						<!-- <p>Enjoy!</p> -->
+					</div>
+
+				</div>
+		</div>
+		</div> <!-- about -->
+<!-- About me page ends -->
+
+<!-- Albums page starts -->
+		<div id="albums">
+				<div class="container-fluid albums" ng-scrollbar>
+					 <div class="row">
+						<div class="col-xs-12">
+							<h1 class="albums-heading"> Albums</h1>
+						</div>
+					</div>
+					<!-- SADIE -->
+
+				<div class="grid">
+					<ul>
+					<li><figure class="effect-sadie">
+						<img src="content/img/florence/florence.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Italy <span>Florence</span></h2>
+							<p>City of Da Vinci, beginning of the<br> Euro-Renaissance  <br><a ui-sref="florence" target="_blank">View Album</a></p>
+						</figcaption>			
+					</figure>
+					</li>
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/rome/rome.jpg" alt="img14" alt="img14"/>
+						<figcaption>
+							<h2>Italy <span>Rome</span></h2>
+							<p>Ancient Rome: Ruins of an Empire<br><a ui-sref="rome" target="_blank">View Album</a></p>
+						</figcaption>			
+					</figure>
+					</li>
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/venice/venice.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Italy <span>Venice</span></h2>
+							<p>Drifting Along the Venetian Lagoon<br><a ui-sref="venice" target="_blank">View Album</a></p>
+						</figcaption>			
+					</figure>
+					</li>
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/barcelona/barcelona.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Spain<span>Barcelona</span></h2>
+							<p>Gaudi's Impeccable Ingenuity<br> in Barcelona <br><a ui-sref="barcelona" target="_blank">View Album</a></p>
+						</figcaption>			
+					</figure>
+					</li>
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/cordoba/cordoba.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Spain<span>Cordoba</span></h2>
+							<p>Cordoba, The City of Lights <br>One Thousand Years Ago <br><a ui-sref="cordoba" target="_blank">View Album</a></p>
+						</figcaption>			
+					</figure>
+					</li>
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/granada/granada.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Spain<span>Granada</span></h2>
+							<p>Through The Narrow Paths of <br>Albayzín' Past <br><a ui-sref="granada" target="_blank">View Album</a></p>
+						</figcaption>			
+					</figure>
+					</li>
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/istanbul/istanbul.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Turkey<span>Istanbul</span></h2>
+							<p>The City of a Thousand Masjids <br><a ui-sref="istanbul" target="_blank">View Album</a></p>
+							<!-- <a href="#">View more</a> -->
+						</figcaption>			
+					</figure>
+					</li>
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/paris/paris.jpg" alt="img14"/>
+						<figcaption>
+							<h2>France<span>Paris</span></h2>
+							<p>City of love<br>
+								City of dreams <br><a ui-sref="paris" target="_blank">View Album</a></p>
+						</figcaption>			
+					</figure>
+					</li>
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/vancouver/vc1.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Canada<span>Vancouver</span></h2>
+							<p>A City by the Mountains<br><a ui-sref="vancouver" target="_blank">View Album</a></p>
+						</figcaption>			
+					</figure>
+					</li>
+			
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/bled/bled.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Slovenia<span>Bled</span></h2>
+							<p>Once upon a time in Slovenia<br>A fairy tale land <br><a ui-sref="bled" target="_blank">View Album</a></p>
+						</figcaption>			
+					</figure>
+					</li>
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/ljubljana/ljubljana.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Slovenia<span>Ljubljana</span></h2>
+							<p>On the bank of Ljubljanica River<br><a ui-sref="ljubljana" target="_blank">View Album</a></p>
+						</figcaption>			
+					</figure>
+					</li>
+
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/budapest/budapest.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Hungary<span>Budapest</span></h2>
+							<p>The capital of Hungary<br><a ui-sref="budapest" target="_blank">View Album</a></p>
+						</figcaption>			
+					</figure>
+					</li>
+				</ul>
+				</div> <!-- class grid -->
+				<!-- SADIE -->
+					
+			</div>
+		</div>  <!-- id="album" -->
+
+<!-- Albums page ends -->	
+
+
+<!-- Poems page starts -->
+
+		<div id="poems">
+				<div class="container-fluid poems" ng-scrollbar>
+					 <div class="row">
+						<div class="col-xs-12">
+							<h1 class="poems-heading">Poems</h1>
+						</div>
+					</div>
+
+				<div class="grid">
+					<ul>
+					<li>
+					<div class="losange">
+					      <div class="los1" >
+					      	<a ui-sref="album" target="_blank">
+					        <img src="content/img/poems3.jpg" alt="" width="255" height="320" />
+					        
+					        <h3>"The Ocean"</h3>
+					        </a>
+					      </div>
+					</div>
+					</li>
+
+					<li>
+					<div class="losange">
+					      <div class="los1" >
+					      	<a ui-sref="solitude" target="_blank">
+					        <img src="content/img/poems3.jpg" alt="" width="255" height="320" />
+					        <h3>"Solitude"</h3>
+					        </a>
+					      </div>
+					</div>
+					</li>
+
+					<li>
+					<div class="losange">
+					      <div class="los1" >
+					      	<a ui-sref="album" target="_blank">
+					        <img src="content/img/poems3.jpg"  alt="" width="255" height="320" />
+					        <h3>"Falling Leaves"</h3>
+					        </a>
+					      </div>
+					</div>
+					</li>
+
+					<li>
+					<div class="losange">
+					      <div class="los1" >
+					      	<a ui-sref="album" target="_blank">
+					        <img src="content/img/poems3.jpg"  alt="" width="255" height="320" />
+					        </a>
+					      </div>
+					</div>
+					</li>
+
+					<li>
+					<div class="losange">
+					      <div class="los1" >
+					      	<a ui-sref="album" target="_blank">
+					        <img src="content/img/poems3.jpg"  alt="" width="255" height="320" />
+					        </a>
+					      </div>
+					</div>
+					</li>
+
+					<li>
+					<div class="losange">
+					      <div class="los1" >
+					      	<a ui-sref="album" target="_blank">
+					        <img src="content/img/poems3.jpg"  alt="" width="255" height="320" />
+					        </a>
+					      </div>
+					</div>
+					</li>
+					</ul>
+				</div>
+
+
+					
+				</div>
+		</div>
+
+<!-- 		Poems page ends -->
+
+
+
+		</main>	
+		<footer>
+			<div class="row">
+				<div class="col-xs-12"> 
+				<p>
+				<i class="fa fa-copyright" aria-hidden="true"></i> 2017 Travel Stories</p>
+			</div>
+			</div>
+		</footer>
+	</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+<!--   needed for smooth scrolling -->
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
+<script src="smooth_scroll.js"></script>
+
+<script src="all.js"></script>
+</body>
+</html>
