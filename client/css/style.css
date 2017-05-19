@@ -38,13 +38,6 @@ nav {
   text-align: right;
   color: white; }
 
-button {
-  background: transparent;
-  border: none;
-  position: fixed;
-  /*position & z-index together is the magic to keep nav floating*/
-  z-index: 99999; }
-
 /*Slideshow*/
 /*Demo 3 starts*/
 #page {
@@ -879,12 +872,5 @@ footer {
 footer p {
   font-family: 'Exo 2', sans-serif;
   font-size: 2em; }
-
-@media screen and (max-width: 1140px) {
-  .cb-slideshow li div h3 {
-    font-size: 100px; } }
-@media screen and (max-width: 600px) {
-  .cb-slideshow li div h3 {
-    font-size: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
