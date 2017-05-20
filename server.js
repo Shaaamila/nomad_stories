@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 // for heroku 1
 app.use(express.static(__dirname));
 app.get('/', function(req, res) {
-    res.sendfile('index.html', {root: __dirname })
+    res.sendfile('/client/index.html', {root: __dirname })
 });
 
 // for heroku
