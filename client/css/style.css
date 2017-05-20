@@ -1,13 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Oregano");
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes");
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Source+Sans+Pro");
-@import url("https://fonts.googleapis.com/css?family=Acme");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 @import url("https://fonts.googleapis.com/css?family=Tangerine");
 @import url("https://fonts.googleapis.com/css?family=Dosis");
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
-@import url("https://fonts.googleapis.com/css?family=Satisfy");
 @import url("https://fonts.googleapis.com/css?family=Exo+2");
 @import url("https://fonts.googleapis.com/css?family=Schoolbell");
 /*Mixin*/
@@ -20,7 +16,9 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 1em; }
+  font-size: 100%;
+  font-size: 1em;
+  /*can customize anytime i want into px*/ }
 
 body {
   background: white;
@@ -31,13 +29,17 @@ body {
   padding: 5%;
   color: black;
   background-size: 100% 100%;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden;
+  /*text-overflow: ellipsis;*/ }
 
-nav {
-  width: 100%;
-  text-align: right;
-  color: white; }
+/*	nav {
+	width: 100%;
+	text-align: right;
+    color: white;
 
+
+}*/
 /*Slideshow*/
 /*Demo 3 starts*/
 #page {
@@ -47,7 +49,8 @@ nav {
 .cb-slideshow:after {
   position: fixed;
   width: 100%;
-  height: 100%;
+  /*    height: 100%;*/
+  height: 100vh;
   top: 0px;
   left: 0px;
   z-index: 0; }
@@ -57,7 +60,9 @@ nav {
   background: transparent url("/content/img/florence/florence.jpg") repeat top left; }
 
 .cb-slideshow {
-  list-style-type: none; }
+  list-style-type: none;
+  height: 100%;
+  overflow: hidden; }
 
 .cb-slideshow li span {
   width: 100%;
@@ -95,9 +100,12 @@ nav {
 
 .cb-slideshow li #welcome h3 {
   font-family: 'Great Vibes', cursive;
-  font-size: 160px;
-  padding-top: 5%;
-  line-height: 120px;
+  font-size: 7em;
+  /* font-size: 70%;*/
+  /* padding-top: 5%;*/
+  /*line-height: 110%;*/
+  /*line-height: 120px;*/
+  line-height: 1em;
   color: white; }
 
 .cb-slideshow li:nth-child(1) span {
@@ -144,13 +152,19 @@ nav {
   animation-delay: 30s; }
 
 /*poem animation*/
+.cb-slideshow .quote {
+  height: 100%;
+  width: 100%;
+  margin-left: 30%;
+  padding-bottom: 2%;
+  overflow: hidden; }
+
 .quote p {
   font-family: 'Tangerine', cursive;
-  font-size: 60px;
-  margin: 5% 30% 5% 30%;
-  /*for width transition*/
-  padding: 0%;
-  line-height: 50px;
+  font-size: 3.5em;
+  line-height: 1em;
+  padding: 3.7% 0%;
+  /*else words gets cut off*/
   color: white;
   opacity: 0;
   /*this stopped the line from showing at the start*/
@@ -358,37 +372,48 @@ nav {
 /*Demo 2 ends*/
 .container-fluid.about {
   background-color: #adbce1;
-  height: 50vh;
+  /*height: 50vh;*/
+  /*words got whacked*/
+  height: auto;
+  /*else words get cut off*/
   padding: 5% 15%;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 .about-intro {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
-  font-size: 50px;
+  /*font-size: 3.5em;*/
+  font-size: 2em;
   color: black;
   text-transform: uppercase;
-  letter-spacing: 10px; }
+  letter-spacing: 0.2em; }
 
 .about-para {
   padding-top: 3%;
   font-family: 'Dosis', sans-serif;
-  font-size: 30px;
-  color: black; }
+  font-size: 1.5em;
+  /*font-size: 2em;*/
+  color: black;
+  line-height: 1.5em; }
 
 .container-fluid.albums {
   height: auto;
   padding: 5% 8%;
   background-color: #3d4a69;
   background-size: 100% 100%;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 .albums-heading {
-  font-size: 65px;
+  /*font-size: 65px;*/
+  /*font-size: 5em;*/
+  font-size: 3em;
+  /*for chrome*/
   width: 70%;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
-  margin: 0px auto 50px auto;
+  margin: 0px auto 1.5em auto;
   opacity: 0.8; }
 
 .albums ul {
@@ -411,11 +436,14 @@ nav {
   position: relative;
   float: left;
   overflow: hidden;
-  height: 360px;
+  /*height: 360px;*/
+  height: 15em;
+  /*for chrome*/
   margin: 2% 2.5%;
   min-width: 320px;
-  max-width: 480px;
-  width: 48%;
+  /*max-width: 480px;*/
+  max-width: 20em;
+  /*width: 48%;*/
   background: #3085a3;
   text-align: center;
   cursor: pointer; }
@@ -423,7 +451,8 @@ nav {
 .grid a {
   text-decoration: none; }
   .grid a:hover {
-    color: #64B5F6; }
+    color: #64B5F6;
+    /*hover color*/ }
 
 .grid figure img {
   position: relative;
@@ -437,7 +466,8 @@ nav {
   padding: 2em;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1.25em;
+  /*font-size: 1.25em;*/
+  font-size: 1em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
@@ -462,7 +492,8 @@ nav {
 
 .grid figure h2 {
   word-spacing: -0.15em;
-  font-weight: 300; }
+  font-weight: 300;
+  /*font-weight: 10;*/ }
 
 .grid figure h2 span {
   font-weight: 800; }
@@ -528,18 +559,19 @@ figure.effect-sadie:hover p {
 
 /*Poem page starts*/
 .container-fluid.poems {
-  height: 100vh;
+  height: auto;
   padding: 5% 8%;
   background-color: #4177bc;
   background-size: 100% 100%;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 .poems-heading {
-  font-size: 65px;
+  font-size: 5em;
   width: 70%;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
-  margin: 0px auto 50px auto;
+  margin: 0px auto 1.5em auto;
   opacity: 0.8; }
 
 .poems ul {
@@ -562,8 +594,10 @@ figure.effect-sadie:hover p {
   margin: 0 auto;
   transform-origin: 50% 50%;
   overflow: hidden;
-  width: 250px;
-  height: 250px; }
+  /*  width: 250px;
+    height: 250px;*/
+  width: 13em;
+  height: 13em; }
 
 .losange {
   transform: rotate(45deg) translateY(10px); }
@@ -584,7 +618,8 @@ figure.effect-sadie:hover p {
 .losange h3 {
   position: absolute;
   font-family: 'Schoolbell', cursive;
-  font-size: 3em;
+  font-size: 2.5em;
+  /*font-size: 3em;*/
   top: 100px;
   left: 0;
   width: 100%;
@@ -597,7 +632,8 @@ figure.effect-sadie:hover p {
   width: 100%;
   padding: 4%;
   background-color: #3d4a69;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 /*slider with text*/
 /* fade slider */
@@ -747,7 +783,8 @@ figure.effect-sadie:hover p {
   width: 100%;
   margin: 0%;
   padding: 0% 0%;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 .photo-list li {
   padding: 1%;
@@ -872,5 +909,9 @@ footer {
 footer p {
   font-family: 'Exo 2', sans-serif;
   font-size: 2em; }
+
+@media (min-width: 60em) {
+  html {
+    font-size: 90%; } }
 
 /*# sourceMappingURL=style.css.map */
