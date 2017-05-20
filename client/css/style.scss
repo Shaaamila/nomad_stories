@@ -202,7 +202,7 @@ html, body {
 .quote p {
 
     font-family: 'Tangerine', cursive;
-    font-size: 3.5em;
+    font-size: 2.5em;
     line-height: 1em;
     padding: 3.7% 0%; /*else words gets cut off*/
     color: white;
@@ -510,7 +510,7 @@ html, body {
 	.albums-heading {
 		/*font-size: 65px;*/
 		/*font-size: 5em;*/
-		font-size: 3em; /*for chrome*/
+		font-size: 4em; /*for chrome*/
 		width: 70%;
 		font-family: 'Josefin Sans', sans-serif;
 		color: white;
@@ -601,18 +601,18 @@ html, body {
 	font-size: 0;
 	opacity: 0;
 }
-
-.grid figure h2 {
+/*5 h2->h3*/
+.grid figure h3 {
 	word-spacing: -0.15em;
 	font-weight: 300;
 	/*font-weight: 10;*/
 }
 
-.grid figure h2 span {
+.grid figure h3 span {
 	font-weight: 800;
 }
 
-.grid figure h2,
+.grid figure h3,
 .grid figure p {
 	margin: 0;
 }
@@ -636,7 +636,7 @@ html, body {
     	transform: translate3d(0,50%,0);
 }
 
-figure.effect-sadie h2 {
+figure.effect-sadie h3 {
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -665,7 +665,7 @@ figure.effect-sadie p {
 	transform: translate3d(0,10px,0);
 }
 
-figure.effect-sadie:hover h2 {
+figure.effect-sadie:hover h3 {
 	color: #fff;
 	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
 	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
@@ -690,7 +690,7 @@ figure.effect-sadie:hover p {
 }
 
     .poems-heading {
-        font-size: 5em;
+        font-size: 4em;
         width: 70%;
         font-family: 'Josefin Sans', sans-serif;
         color: white;
@@ -728,8 +728,10 @@ figure.effect-sadie:hover p {
   transform: rotate(45deg) translateY(10px);
 }
 .losange .los1 {
-  width: 355px;
-  height: 355px;
+/*  width: 355px;
+  height: 355px;*/
+  width: 20em;
+  height: 20em;
   transform: rotate(-45deg) translateY(-74px);
 }
 .losange .los1 img {
@@ -747,7 +749,8 @@ figure.effect-sadie:hover p {
    font-family: 'Schoolbell', cursive;
    font-size: 2.5em;
    /*font-size: 3em;*/
-   top: 100px; 
+   /*top: 80px;*/ 
+   top: 2.5em;
    left: 0; 
    width: 100%;
    color: white;
