@@ -10,12 +10,9 @@
   "license": "UNLICENSED",
   "dependencies": {
     "angular": "^1.6.4",
-    "angular-animate": "^1.6.4",
     "angular-aria": "^1.6.4",
     "angular-bootstrap": "^0.12.2",
     "angular-material": "^1.1.4",
-    "@uirouter/angularjs": "latest",
-    "@uirouter/visualizer": "latest",
     "body-parser": "^1.17.1",
     "express": "^4.13.4",
     "gulp": "^3.9.1",
