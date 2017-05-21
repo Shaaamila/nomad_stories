@@ -514,7 +514,8 @@ html, body {
 		width: 70%;
 		font-family: 'Josefin Sans', sans-serif;
 		color: white;
-		margin: 0px auto 1.5em auto;
+		/*margin: 0px auto 1.5em auto;*/
+		margin: 0px auto 0.7em auto;
 		opacity: 0.8;
 
 	}
@@ -772,18 +773,19 @@ figure.effect-sadie:hover p {
 /*slider with text*/
 /* fade slider */
 .slides {
-    height: 50vh;
+    height: 28em;
     margin:50px auto;
     overflow:hidden;
     position:relative;
-    width:900px;
+    /*width:900px;*/
+    width: 50em;
 }
 .slides ul {
     list-style:none;
     position:relative;
 }
 .slides img {
-    height: 50vh;
+    height: 28em;
     width: 100%;
 }
  
@@ -915,7 +917,8 @@ figure.effect-sadie:hover p {
 .slides ul li div {
     background-color:#000000;
     color:#FFFFFF;
-    font-size:26px;
+    /*font-size:26px;*/
+    font-size: 1.5em;
     left:10%;
     margin:0 auto;
     padding:20px;
@@ -970,8 +973,10 @@ figure.effect-sadie:hover p {
 .photo-list figure {
     margin: 0;
     padding: 0;
-    max-width: 500px;
-    max-height: 400px;
+   /* max-width: 500px;
+    max-height: 400px;*/
+    max-width: 20em;
+    max-height: 25em;
     position: relative;
     display: block;
     cursor: pointer;
@@ -1020,7 +1025,8 @@ figure.effect-sadie:hover p {
     position: relative;
     righ: 100%;
     margin-top: 37px;
-    font-size: 30px;
+/*    font-size: 30px;*/
+	font-size: 1.4em;
     -webkit-transition: all .9s ease;
     -moz-transition: all .9s ease;
     -o-transition: all .9s ease;
@@ -1035,8 +1041,10 @@ figure.effect-sadie:hover p {
     margin-top: 20px;
     position: relative;
     left: 100%;
-    font-size: 20px;
-    line-height: 25px;
+    /*font-size: 20px;*/
+    font-size: 1em;
+    /*line-height: 25px;*/
+    line-height: 1.2em;
     -webkit-transition: all .9s ease;
     -moz-transition: all .9s ease;
     -o-transition: all .9s ease;
