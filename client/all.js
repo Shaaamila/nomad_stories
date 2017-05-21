@@ -22,14 +22,14 @@
 
 // Albums is in main page, album is in partials
 			.state('florence',{  
-				url:'/florence',
+				url:'#/florence',
 				templateUrl: '/partials/florence.html',
 				controller: 'albumCtrl',
 				controllerAs: 'vm',
 
 			})
 			.state('rome',{  
-				url:'/rome',
+				url:'/#/rome',
 				templateUrl: '/partials/rome.html',
 				controller: 'albumCtrl',
 				controllerAs: 'vm',

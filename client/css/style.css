@@ -408,7 +408,7 @@ body {
 .albums-heading {
   /*font-size: 65px;*/
   /*font-size: 5em;*/
-  font-size: 4em;
+  font-size: 3.4em;
   /*for chrome*/
   width: 70%;
   font-family: 'Josefin Sans', sans-serif;
@@ -568,7 +568,7 @@ figure.effect-sadie:hover p {
   overflow: hidden; }
 
 .poems-heading {
-  font-size: 4em;
+  font-size: 3.4em;
   width: 70%;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
